@@ -355,6 +355,30 @@ footer {
   overflow: hidden;
 }
 
+.animated-button-chat {
+  background-color: rgba(61, 67, 87, 255);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button-chat:hover {
+  background-color: rgb(17, 17, 72); 
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .animated-button::after {
   content: "";
   background: #c22a22;
