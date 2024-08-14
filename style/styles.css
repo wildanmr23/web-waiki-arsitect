@@ -54,14 +54,36 @@ header {
   max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+/* Responsif pada tablet */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    padding: 4rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+  }
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+/* Responsif pada smartphone */
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 .cta-btn {
@@ -373,7 +395,7 @@ footer {
 }
 
 .animated-button-chat:hover {
-  background-color: rgb(17, 17, 72); 
+  background-color: blue;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
