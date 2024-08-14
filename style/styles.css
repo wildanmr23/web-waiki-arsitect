@@ -3,29 +3,26 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-header {
-  background: white;
-  padding: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
+.navbar-brand {
+  font-weight: bold;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
 }
 
 .hero {
@@ -97,6 +94,7 @@ header {
   font-size: 1rem;
 }
 .about-us {
+  margin-top: 50px;
   padding: 4rem 2rem;
   background: #f9f9f9;
 }
@@ -409,7 +407,7 @@ footer {
 }
 
 .animated-button-chat:hover {
-  background-color: blue;
+  background-color: rgb(16, 16, 81);
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
