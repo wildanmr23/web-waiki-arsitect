@@ -3,28 +3,6 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #0056b3;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030;
-}
-
 .hero {
   background: url("https://images.unsplash.com/photo-1628191078376-f31a36c9f2cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center center/cover;
@@ -82,7 +60,6 @@ body {
     font-size: 3.5vw;
   }
 }
-
 
 .cta-btn {
   padding: 0.75rem 2rem;
@@ -362,7 +339,10 @@ footer {
 /* Responsif pada mobile */
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom menjadi lebih fleksibel */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Kolom menjadi lebih fleksibel */
     gap: 10px;
   }
 
@@ -370,7 +350,6 @@ footer {
     min-width: 100%; /* Pastikan item penuh di mobile untuk scroll horizontal */
   }
 }
-
 
 .animated-button {
   background-color: #c22a22; /* Green */
